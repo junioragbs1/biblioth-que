@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9dafe03bf9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bibliotheque du Sud</title>
+  </head>
+  <body>
+    <header>
+      <div class="heade">
+        <a href="index.html">
+          <img style="width: 150px" src="home.png" alt="home" />
+        </a>
+        <h1>BIBLIOTHEQUE DU SUD</h1>
+      </div>
+      <div class="search">
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="🔎 Recherchez par titre , auteur , genre .."
+          required
+        />
+      </div>
+      <div class="genre">
+        <label id="genre">Choisissez un genre:</label>
+        <select name="genre">
+          <option value="">Faites votre choix</option>
+          <option value="Roman">Roman</option>
+          <option value="Science-fiction">Science-fiction</option>
+          <option value="Histoire">Histoire</option>
+          <option value="Philosophie">Philosophie</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="nav">
+        <a href="#livres" class="navigation"> Nos Livres </a>
+        <a href="#eav" class="navigation"> Evenements</a>
+        <a href="#Contactez" class="navigation"> Contactez </a>
+      </div>
+      <section class="Nos_livres">
+        <h2 id="livres">1 - Nos Livres</h2>
+        <p>
+          Vous pouvez voir notre collection et reserver les livres disponibles
+          ci-dessous :
+        </p>
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <td>Nom</td>
+                <td>Titre</td>
+                <td>Genre</td>
+                <td class="hide">Année</td>
+                <td>Réservation</td>
+              </tr>
+            </thead>
+            <tr>
+              <td>L'Étranger</td>
+              <td>A. Camus</td>
+              <td>Philosophie</td>
+              <td class="hide">1942</td>
+              <td>
+                <button class="disponible" type="submit">RESERVER</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1984</td>
+              <td>G. Orwell</td>
+              <td>Sce-fiction</td>
+              <td class="hide">1949</td>
+              <td>
+                <button class="Indisponible" type="submit" disabled>
+                  RESERVER
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Le Nom de la rose</td>
+              <td>Umberto Eco</td>
+              <td>Policier</td>
+              <td class="hide">1980</td>
+              <td>
+                <button class="disponible" type="submit">RESERVER</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <h2 id="eav">2- Nos évenements à venir :</h2>
+      <div class="choix_events">
+        <div class="conf">
+          <p>Conférence sur l'intelligence artificielle</p>
+          <p>📆: 12 septembre 2025</p>
+          <p>🕦: 14h30</p>
+          <button type="submit">S'inscrire</button>
+        </div>
+        <div class="echec">
+          <p>Tournoi d'échecs amateur</p>
+          <p>📆: 27 juin 2025</p>
+          <p>🕦: 09h00</p>
+          <button type="submit">S'inscrire</button>
+        </div>
+        <div class="film">
+          <p>Projection en plein air </p>
+          <p>📆: 5 juillet 2025</p>
+          <p>🕦: 21h15</p>
+          <button type="submit">S'inscrire</button>
+        </div>
+      </div>
+      <section>
+        <h2 id="Contactez">3- Contactez :</h2>
+        <div class="contacts">
+          <input type="text" id="Nom" name="Nom" placeholder="Nom" />
+          <input type="text" id="Prénom" name="Prénom" placeholder="Prénom" />
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="text" id="Objet" name="Objet" placeholder="Objet" />
+          <textarea name="comments">Votre message</textarea>
+          <button class="submit" type="submit">ENVOYER</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info">
+        <p>
+          <strong> Horaires d’ouverture :</strong> Lundi - Vendredi : 9h - 18h
+        </p>
+      </div>
+      <div>
+        <p>15 avenue XYZ ; CA</p>
+        <p>azert@icloud.com</p>
+        <p>XX.XX.XX.XX.XX</p>
+      </div>
+      <div class="reseaux">
+        <p>Suivez nous sur :</p>
+        <a href="https://www.facebook.com">
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.youtube.com">
+          <i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://x.com"> <i class="fa-brands fa-x-twitter"></i> </a>
+      </div>
+      <p><strong> &copy;2025 SOUTH-BBL </strong></p>
+    </footer>
+  </body>
+</html>
